@@ -1,0 +1,45 @@
+<odoo>
+    <menuitem name="Reports" id="hr_candidato.menu_3" parent="hr_recruitment.menu_hr_recruitment_root" groups="group_hr_candidato_user"/>
+    <menuitem name="Behavior of the process of selection per month" id="hr_candidato.menu_44_list" parent="hr_candidato.menu_3"
+    action="action_hr_solicitud_report" groups="group_hr_candidato_user"/>
+    <menuitem name="Candidates to verify for job of work" id="hr_candidato.menu_22_list" parent="hr_candidato.menu_3"
+    action="action_hr_puesto_report" groups="group_hr_candidato_user"/>
+    <menuitem name="Candidates' list in stages" id="hr_candidato.menu_19_list" parent="hr_candidato.menu_3"
+    action="action_hr_etapas_report" groups="group_hr_candidato_user"/>
+    <menuitem name="Candidates' list for courses" id="hr_candidato.menu_20_list" parent="hr_candidato.menu_3"
+    action="action_hr_curso_report" groups="group_hr_candidato_user"/>
+    <menuitem name="List of candidates approved per year" id="hr_candidato.menu_26_list" parent="hr_candidato.menu_3"
+    action="action_hr_anno_report" groups="group_hr_candidato_manager"/>
+    <!--User-->
+    <menuitem name="User" id="hr_candidato.menu_15_list" parent="hr_recruitment.menu_hr_recruitment_configuration"
+    action="base.action_res_users" groups="group_hr_candidato_manager"/>
+    <!--Model-->
+    <menuitem name="Model" id="hr_candidato.menu_1" parent="hr_recruitment.menu_hr_recruitment_root" groups="group_hr_modelo_user"/>
+    <menuitem name="Military Area" id="hr_candidato.menu_1_list" parent="hr_candidato.menu_1"
+              action="area_military_action_window" groups="group_hr_modelo_user"/>
+    <menuitem name="Model medical checkup" id="hr_candidato.menu_2_list" parent="hr_candidato.menu_1"
+              action="preempleo_action_window" groups="group_hr_modelo_user"/>
+    <menuitem name="Model Search of References" id="hr_candidato.menu_3_list" parent="hr_candidato.menu_1"
+              action="searchre_action_window" groups="group_hr_modelo_user"/>
+    <menuitem name="Model Summary of Labor verifications" id="hr_candidato.menu_4_list" parent="hr_candidato.menu_1"
+              action="resumen_action_window" groups="group_hr_modelo_user"/>
+    <menuitem name="Model Summary of psychological evaluation" id="hr_candidato.menu_5_list" parent="hr_candidato.menu_1"
+              action="psico_action_window" groups="group_hr_modelo_user"/>
+    <menuitem name="Model the student is record of integral evaluation" id="hr_candidato.menu_6_list" parent="hr_candidato.menu_1"
+              action="evalua_action_window" groups="group_hr_modelo_user"/>
+    <!--Nomencladores-->
+    <menuitem name="Standards" id="hr_candidato.menu_2" parent="hr_recruitment.menu_hr_recruitment_root" groups="group_hr_nomengladores_manager"/>
+
+    <menuitem name="Company" id="hr_candidato.menu_7_list" parent="hr_candidato.menu_2"
+              action="base.action_res_company_form" groups="group_hr_nomengladores_manager"/>
+    <menuitem name="UEB" id="hr_candidato.menu_8_list" parent="hr_candidato.menu_2"
+              action="ueb_action_window" groups="group_hr_nomengladores_manager"/>
+    <menuitem name="Areas of regulation and control" id="hr_candidato.menu_9_list" parent="hr_candidato.menu_2"
+              action="area_action_window" groups="group_hr_nomengladores_manager"/>
+    <menuitem name="Course of habilitation" id="hr_candidato.menu_10_list" parent="hr_candidato.menu_2"
+              action="website_slides.slide_channel_action_overview" groups="group_hr_nomengladores_manager"/>
+    <menuitem name="Aspect to evaluate course of habilitation" id="hr_candidato.menu_11_list" parent="hr_candidato.menu_2"
+              action="aspectos_action_window" groups="group_hr_nomengladores_manager"/>
+    <menuitem name="Stage of the process of selection" id="hr_candidato.menu_12_list" parent="hr_candidato.menu_2"
+              action="hr_recruitment.hr_recruitment_stage_act" groups="group_hr_nomengladores_manager"/>
+</odoo>

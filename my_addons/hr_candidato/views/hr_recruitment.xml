@@ -1,0 +1,61 @@
+<odoo>
+  <record id="views_Jobs_Recruitment_Form" model="ir.ui.view">
+    <field name="name">Jobs-Recruitment.Form</field>
+    <field name="model">hr.applicant</field>
+    <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_form"/>
+    <field name="arch" type="xml">
+
+                  <xpath expr="//field[@name='email_from']" position="after">
+                      <field name="ci"/>
+                  </xpath>
+
+                  <xpath expr="//field[@name='ci']" position="after">
+                      <field name="address"/>
+                  </xpath>
+
+                  <xpath expr="//field[@name='source_id']" position="after">
+                      <field name="experience"/>
+                  </xpath>
+
+                  <xpath expr="//field[@name='experience']" position="after">
+                      <field name="Observations"/>
+                  </xpath>
+
+                  <xpath expr="//field[@name='type_id']" position="after">
+                      <field name="course"/>
+                  </xpath>
+
+                  <xpath expr="//field[@name='course']" position="after">
+                      <field name="grade_possesses"/>
+                  </xpath>
+
+                  <xpath expr="//field[@name='grade_possesses']" position="after">
+                      <field name="formal_grade"/>
+                  </xpath>
+
+                  <field name="availability" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                  </field>
+
+                  <field name="salary_proposed" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                  </field>
+
+                  <field name="salary_expected" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                  </field>
+    </field>
+
+  </record>
+    <record id="views_hr_applicant_view_search" model="ir.ui.view">
+        <field name="name">	hr.applicant.view.search</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_search_bis"/>
+        <field name="arch" type="xml">
+            <search>
+              <field name="ci"/>
+              <field name="address"/>
+            </search>
+          </field>
+    </record>
+</odoo>

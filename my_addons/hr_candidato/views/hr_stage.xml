@@ -1,0 +1,14 @@
+<odoo>
+  <record id="views_hr_recruitment_stage_form" model="ir.ui.view">
+      <field name="name">hr.recruitment.stage.form</field>
+      <field name="model">hr.recruitment.stage</field>
+      <field name="inherit_id" ref="hr_recruitment.hr_recruitment_stage_form"/>
+      <field name="arch" type="xml">
+
+                  <xpath expr="//field[@name='sequence']" position="after">
+                      <field name="code"/>
+                  </xpath>
+
+      </field>
+  </record>
+</odoo>

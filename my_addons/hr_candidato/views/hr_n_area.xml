@@ -1,0 +1,28 @@
+
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="area_list">
+      <field name="name">Areas of regulation and control</field>
+      <field name="model">areac.areac</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="ueb"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="area_action_window">
+      <field name="name">Areas of regulation and control</field>
+      <field name="res_model">areac.areac</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+
+  </data>
+</odoo>

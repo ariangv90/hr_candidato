@@ -1,0 +1,25 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="area_military_list">
+      <field name="name">Model Military area</field>
+      <field name="model">modelo.area</field>
+      <field name="arch" type="xml">
+        <tree editable="bottom">
+          <field name="applicant_id"/>
+          <field name="job_id"/>
+
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="area_military_action_window">
+      <field name="name">Model Military Area</field>
+      <field name="res_model">modelo.area</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="area_military_list"/>
+    </record>
+  </data>
+</odoo>

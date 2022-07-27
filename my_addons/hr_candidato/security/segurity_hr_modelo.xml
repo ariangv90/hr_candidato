@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record model="ir.module.category" id="module_category_hr_modelo">
+            <field name="name">Model</field>
+            <field name="description">Help, Administration for Modulate of Models.</field>
+            <field name="sequence">16</field>
+        </record>
+        <record id="group_hr_modelo_user" model="res.groups">
+            <field name="name">Office</field>
+            <field name="category_id" ref="hr_candidato.module_category_hr_modelo"/>
+            <field name="implied_ids" eval="[(4, ref('hr.group_hr_user'))]"/>
+        </record>
+        <record id="group_hr_modelo_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="hr_candidato.module_category_hr_modelo"/>
+            <field name="implied_ids" eval="[(4, ref('hr_candidato.group_hr_modelo_user'))]"/>
+            <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+        </record>
+
+        <record id="base.default_user" model="res.users">
+        <field name="groups_id" eval="[(4,ref('hr_candidato.group_hr_modelo_manager'))]"/>
+    </record>
+    </data>
+</odoo>
