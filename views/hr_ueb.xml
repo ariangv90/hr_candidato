@@ -1,0 +1,35 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="ueb_list">
+      <field name="name">UEB list</field>
+      <field name="model">ueb.ueb</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="company"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="ueb_action_window">
+      <field name="name">UEB</field>
+      <field name="res_model">ueb.ueb</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.server" id="hr_ueb_server">
+        <field name="name">Mensaje</field>
+        <field name="model_id" ref="hr_candidato.model_ueb_ueb"/>
+        <field name="binding_model_id" ref="hr_candidato.model_ueb_ueb"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+          action = records.action_server()
+        </field>
+    </record>
+  </data>
+</odoo>

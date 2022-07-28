@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <report
+            id="hr_candidato.puesto_doc_view"
+            model="hr.job"
+            string="Anexo-DS2 Candidates to verify for Job Position"
+            report_type="xlsx"
+            name="hr_candidato.puesto_doc_view"
+            file= "hr_job"
+            attachment_use="False"
+            menu="False"
+        />
+        <template id="puesto_doc_view">
+        <t t-call="web.html_container">
+            <t t-call="web.internal_layout">
+             <div class="page">
+
+                 <h2>Candidates to verify for Job Position</h2>
+                 <table class="table table table-striped">
+                    <thead>
+                        <th class="text-center bg-danger" style="width: 25%">Name</th>
+                        <th class="text-center bg-danger" style="width: 25%">Job Position</th>
+                         <th class="text-center bg-danger" style="width: 10%">CI</th>
+                        <th class="text-center bg-danger" style="width: 10%">Address</th>
+                        <th class="text-center bg-danger" style="width: 20%">Formal Grade That You Possess</th>
+                        <th class="text-center bg-danger" style="width: 20%">Experience that you possess</th>
+                    </thead>
+                     <tbody>
+                         <t  t-foreach="candidato1" t-as="doc">
+                            <tr>
+                                <td class="text-center text-info"><span t-esc="doc['name']"/></td>
+                                <td class="text-center text-info"><span t-esc="doc['job_id']"/></td>
+                                <td class="text-center text-info"><span t-esc="doc['ci']"/></td>
+                                <td class="text-center text-info"><span t-esc="doc['address']"/></td>
+                                <td class="text-center text-info"><span t-esc="doc['grade_possesses']"/></td>
+                                <td class="text-center text-info"><span t-esc="doc['experience']"/></td>
+                            </tr>
+                        </t>
+                    </tbody>
+                 </table>
+             </div>
+            </t>
+        </t>
+        </template>
+</odoo>

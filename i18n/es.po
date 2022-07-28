@@ -1,0 +1,720 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_candidato
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20220214\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-25 21:06+0000\n"
+"PO-Revision-Date: 2022-07-25 21:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_anno_report__date_year__2015
+msgid "2015"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_anno_report__date_year__2016
+msgid "2016"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_anno_report__date_year__2017
+msgid "2017"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_anno_report__date_year__2018
+msgid "2018"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_anno_report__date_year__2019
+msgid "2019"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_anno_report__date_year__2020
+msgid "2020"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_anno_report__date_year__2021
+msgid "2021"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_anno_report__date_year__2022
+msgid "2022"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_anno_report__date_year__2023
+msgid "2023"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_anno_report__date_year__2024
+msgid "2024"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_anno_report__date_year__2025
+msgid "2025"
+msgstr ""
+
+#. module: hr_candidato
+#: model_terms:ir.ui.view,arch_db:hr_candidato.anno_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.cursos_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.etapas_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.solicitud_doc_view
+msgid "Address"
+msgstr "Dirección Paricular"
+
+#. module: hr_candidato
+#: model:ir.actions.report,name:hr_candidato.puesto_doc_view
+msgid "Anexo-DS2 Candidates to verify for Job Position"
+msgstr "Anexo-DS2 Candidatos a verificar por puesto de trabajo"
+
+#. module: hr_candidato
+#: model:ir.actions.report,name:hr_candidato.cursos_report
+msgid "Anexo-DS4 Candidates list for Course"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_anno_report__date_year
+msgid "Anno"
+msgstr "Año"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_model_checkup__applicant_id
+#: model:ir.model.fields,field_description:hr_candidato.field_model_evalua__applicant_id
+#: model:ir.model.fields,field_description:hr_candidato.field_model_psico__applicant_id
+#: model:ir.model.fields,field_description:hr_candidato.field_model_resumen__applicant_id
+#: model:ir.model.fields,field_description:hr_candidato.field_model_searchre__applicant_id
+msgid "Applicant"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_solicitud_report__date_month__04
+msgid "April"
+msgstr "Abril"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_model_checkup__area
+msgid "Area of Health"
+msgstr "Area de Salud"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.area_action_window
+#: model:ir.model,name:hr_candidato.model_areac_areac
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_job__area
+#: model:ir.ui.menu,name:hr_candidato.menu_9_list
+msgid "Areas of regulation and control"
+msgstr "Áreas de regulación y Control"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.aspectos_action_window
+#: model:ir.model,name:hr_candidato.model_slide_aspect
+#: model:ir.model.fields,field_description:hr_candidato.field_slide_channel__aspectos
+#: model:ir.ui.menu,name:hr_candidato.menu_11_list
+msgid "Aspect to evaluate course of habilitation"
+msgstr "Candidatos a verificar por puesto de trabajo"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_solicitud_report__date_month__08
+msgid "August"
+msgstr "Agosto"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.action_hr_solicitud_report
+#: model:ir.model,name:hr_candidato.model_hr_solicitud_report
+#: model_terms:ir.ui.view,arch_db:hr_candidato.solicitud_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_solicitud_report_form
+msgid "Behavior of the process of selection per month"
+msgstr "Comportamiento del proceso de selección por mes"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_applicant__ci
+#: model_terms:ir.ui.view,arch_db:hr_candidato.anno_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.cursos_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.etapas_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.solicitud_doc_view
+msgid "CI"
+msgstr "Carnet"
+
+#. module: hr_candidato
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_anno_report_form
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_curso_report_form
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_etapas_report_form
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_puesto_report_form
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_solicitud_report_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: hr_candidato
+#: model_terms:ir.ui.view,arch_db:hr_candidato.cursos_doc_view
+msgid "Candidates list for Course"
+msgstr "Listado de candidatos por cursos"
+
+#. module: hr_candidato
+#: model:ir.model,name:hr_candidato.model_hr_curso_report
+msgid "Candidates list for courses"
+msgstr "Listado de candidatos por cursos"
+
+#. module: hr_candidato
+#: model:ir.actions.report,name:hr_candidato.etapas_report
+#: model:ir.model,name:hr_candidato.model_hr_etapas_report
+#: model_terms:ir.ui.view,arch_db:hr_candidato.etapas_doc_view
+msgid "Candidates list in stages"
+msgstr "Listado de candidatos por etapas"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.action_hr_puesto_report
+#: model:ir.model,name:hr_candidato.model_hr_puesto_report
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_puesto_report_form
+msgid "Candidates to verify for job of work"
+msgstr "Candidatos a verificar por puesto de trabajo"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.action_hr_curso_report
+#: model:ir.ui.menu,name:hr_candidato.menu_13_list
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_curso_report_form
+msgid "Candidates' list for courses"
+msgstr "Listado de candidatos por cursos"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.action_hr_etapas_report
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_etapas_report_form
+msgid "Candidates' list in stages"
+msgstr "Listado de candidatos por etapas"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_areac_areac__code
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_job__code
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_recruitment_stage__code
+#: model:ir.model.fields,field_description:hr_candidato.field_res_company__code
+#: model:ir.model.fields,field_description:hr_candidato.field_slide_aspect__code
+#: model:ir.model.fields,field_description:hr_candidato.field_slide_channel__code
+#: model:ir.model.fields,field_description:hr_candidato.field_ueb_ueb__code
+msgid "Code"
+msgstr "Código"
+
+#. module: hr_candidato
+#: model:ir.model,name:hr_candidato.model_res_company
+#: model:ir.ui.menu,name:hr_candidato.menu_7_list
+msgid "Company"
+msgstr "Compañia"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_ueb_ueb__company
+msgid "Company Inside"
+msgstr "Compañia que Pertenece"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_model_psico__conclution
+#: model:ir.model.fields,field_description:hr_candidato.field_model_resumen__conclution
+msgid "Concluciones"
+msgstr "Concluciones"
+
+#. module: hr_candidato
+#: model_terms:ir.ui.view,arch_db:hr_candidato.cursos_doc_view
+msgid "Course"
+msgstr "Curso"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_applicant__course
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_curso_report__course_id
+#: model:ir.model.fields,field_description:hr_candidato.field_model_evalua__course_id
+msgid "Course of Habilitation"
+msgstr "Curso de Habilitación"
+
+#. module: hr_candidato
+#: model:ir.model,name:hr_candidato.model_slide_channel
+#: model:ir.ui.menu,name:hr_candidato.menu_10_list
+msgid "Course of habilitation"
+msgstr "Curso de Habilitación"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_areac_areac__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_anno_report__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_curso_report__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_etapas_report__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_puesto_report__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_solicitud_report__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_model_checkup__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_model_evalua__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_model_psico__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_model_resumen__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_model_searchre__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_modelo_area__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_slide_aspect__create_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_ueb_ueb__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_areac_areac__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_anno_report__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_curso_report__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_etapas_report__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_puesto_report__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_solicitud_report__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_model_checkup__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_model_evalua__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_model_psico__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_model_resumen__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_model_searchre__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_modelo_area__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_slide_aspect__create_date
+#: model:ir.model.fields,field_description:hr_candidato.field_ueb_ueb__create_date
+msgid "Created on"
+msgstr "Creado"
+
+#. module: hr_candidato
+#: model_terms:ir.ui.view,arch_db:hr_candidato.solicitud_doc_view
+msgid "Creation Date"
+msgstr "Fecha de Creación"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_solicitud_report__date_month__12
+msgid "December"
+msgstr "Diciembre"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_areac_areac__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_anno_report__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_curso_report__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_etapas_report__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_puesto_report__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_solicitud_report__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_model_checkup__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_model_evalua__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_model_psico__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_model_resumen__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_model_searchre__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_modelo_area__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_report_hr_candidato_puesto_doc_view__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_slide_aspect__display_name
+#: model:ir.model.fields,field_description:hr_candidato.field_ueb_ueb__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: hr_candidato
+#: model:ir.actions.report,name:hr_candidato.solicitud_report
+msgid "DoC Report"
+msgstr "Reporte en .Doc"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_etapas_report__etapas_id
+msgid "Stages"
+msgstr "Etapas"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_applicant__experience
+msgid "Experience that you possess"
+msgstr "Experiencia que ud Posee"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_solicitud_report__date_month__02
+msgid "Febrery"
+msgstr "Febrero"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_model_evalua__final_evaluation
+msgid "Final evaluation"
+msgstr "Evalución de Final"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_applicant__grade_possesses
+#: model_terms:ir.ui.view,arch_db:hr_candidato.anno_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.cursos_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.etapas_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.solicitud_doc_view
+msgid "Formal Grade That You Possess"
+msgstr "Calificación formal que posee"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_applicant__formal_grade
+msgid "Formal grade"
+msgstr "Calificación formal"
+
+#. module: hr_candidato
+#: model:ir.model,name:hr_candidato.model_hr_job
+msgid "Gestion Job Positions"
+msgstr "Gestión de Puestos de Trabajo"
+
+#. module: hr_candidato
+#: model:ir.model,name:hr_candidato.model_hr_applicant
+msgid "Gestion of Applicants"
+msgstr "Gestion de Candidatos"
+
+#. module: hr_candidato
+#: model:ir.module.category,description:hr_candidato.module_category_hr_candidato
+msgid "Help, Administration  for Modulate Candidate's Request."
+msgstr "Ayuda Administracion para Modulo Solicitud de Candidato."
+
+#. module: hr_candidato
+#: model:ir.module.category,description:hr_candidato.module_category_hr_modelo
+msgid "Help, Administration for Modulate of Models."
+msgstr "Ayuda, Administración para el Módulo de Modelos"
+
+#. module: hr_candidato
+#: model:ir.module.category,description:hr_candidato.module_category_hr_nomengladores
+msgid "Help, Administration for Modulate of Standards."
+msgstr "Ayuda, la Administración del Módulo de Nomencladores"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_applicant__address
+msgid "Home address"
+msgstr "Dirección Particular"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_areac_areac__id
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_anno_report__id
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_curso_report__id
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_etapas_report__id
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_puesto_report__id
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_solicitud_report__id
+#: model:ir.model.fields,field_description:hr_candidato.field_model_checkup__id
+#: model:ir.model.fields,field_description:hr_candidato.field_model_evalua__id
+#: model:ir.model.fields,field_description:hr_candidato.field_model_psico__id
+#: model:ir.model.fields,field_description:hr_candidato.field_model_resumen__id
+#: model:ir.model.fields,field_description:hr_candidato.field_model_searchre__id
+#: model:ir.model.fields,field_description:hr_candidato.field_modelo_area__id
+#: model:ir.model.fields,field_description:hr_candidato.field_report_hr_candidato_puesto_doc_view__id
+#: model:ir.model.fields,field_description:hr_candidato.field_slide_aspect__id
+#: model:ir.model.fields,field_description:hr_candidato.field_ueb_ueb__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_model_searchre__informative_interest
+msgid "Informative interest"
+msgstr "Información de Interes"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_solicitud_report__date_month__01
+msgid "January"
+msgstr "Enero"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_puesto_report__job_id
+#: model:ir.model.fields,field_description:hr_candidato.field_model_checkup__job_id
+#: model:ir.model.fields,field_description:hr_candidato.field_modelo_area__job_id
+#: model_terms:ir.ui.view,arch_db:hr_candidato.cursos_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.etapas_doc_view
+msgid "Job Position"
+msgstr "Puesto de Trabajo"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_solicitud_report__date_month__07
+msgid "July"
+msgstr "Julio"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_solicitud_report__date_month__06
+msgid "June"
+msgstr "Junio"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_areac_areac____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_anno_report____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_curso_report____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_etapas_report____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_puesto_report____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_solicitud_report____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_model_checkup____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_model_evalua____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_model_psico____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_model_resumen____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_model_searchre____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_modelo_area____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_report_hr_candidato_puesto_doc_view____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_slide_aspect____last_update
+#: model:ir.model.fields,field_description:hr_candidato.field_ueb_ueb____last_update
+msgid "Last Modified on"
+msgstr "Ultima Modificación"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_areac_areac__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_anno_report__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_curso_report__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_etapas_report__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_puesto_report__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_solicitud_report__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_model_checkup__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_model_evalua__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_model_psico__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_model_resumen__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_model_searchre__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_modelo_area__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_slide_aspect__write_uid
+#: model:ir.model.fields,field_description:hr_candidato.field_ueb_ueb__write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_areac_areac__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_anno_report__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_curso_report__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_etapas_report__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_puesto_report__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_solicitud_report__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_model_checkup__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_model_evalua__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_model_psico__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_model_resumen__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_model_searchre__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_modelo_area__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_slide_aspect__write_date
+#: model:ir.model.fields,field_description:hr_candidato.field_ueb_ueb__write_date
+msgid "Last Updated on"
+msgstr "Ultima Actualización"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.action_hr_anno_report
+#: model:ir.model,name:hr_candidato.model_hr_anno_report
+#: model:ir.ui.menu,name:hr_candidato.menu_14_list
+#: model_terms:ir.ui.view,arch_db:hr_candidato.anno_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_anno_report_form
+msgid "List of candidates approved per year"
+msgstr "Listado de candidatos aprobados por año"
+
+#. module: hr_candidato
+#: model:res.groups,name:hr_candidato.group_hr_candidato_manager
+#: model:res.groups,name:hr_candidato.group_hr_modelo_manager
+#: model:res.groups,name:hr_candidato.group_hr_nomengladores_manager
+msgid "Manager"
+msgstr "Administración"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_solicitud_report__date_month__03
+msgid "March"
+msgstr "Marzo"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_solicitud_report__date_month__05
+msgid "May"
+msgstr "Mayo"
+
+#. module: hr_candidato
+#: model:ir.actions.server,name:hr_candidato.hr_ueb_server
+msgid "Mensaje"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.ui.menu,name:hr_candidato.menu_1_list
+msgid "Military Area"
+msgstr "Area de Atención Militar"
+
+#. module: hr_candidato
+#: model:ir.module.category,name:hr_candidato.module_category_hr_modelo
+#: model:ir.ui.menu,name:hr_candidato.menu_1
+msgid "Model"
+msgstr "Modelos"
+
+#. module: hr_candidato
+#: model:ir.model,name:hr_candidato.model_model_checkup
+msgid "Model Medical checkup"
+msgstr "Modelo de Chequeo Médico"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.area_military_action_window
+#: model:ir.model,name:hr_candidato.model_modelo_area
+msgid "Model Military Area"
+msgstr "Modelo de Area Atención Militar"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.searchre_action_window
+#: model:ir.model,name:hr_candidato.model_model_searchre
+#: model:ir.ui.menu,name:hr_candidato.menu_3_list
+msgid "Model Search of References"
+msgstr "Model Búsqueda de Referencias"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.psico_action_window
+#: model:ir.actions.act_window,name:hr_candidato.resumen_action_window
+#: model:ir.model,name:hr_candidato.model_model_resumen
+#: model:ir.ui.menu,name:hr_candidato.menu_4_list
+msgid "Model Summary of Labor verifications"
+msgstr "Modelo de Resumen de Verificación Laboral"
+
+#. module: hr_candidato
+#: model:ir.model,name:hr_candidato.model_model_psico
+#: model:ir.ui.menu,name:hr_candidato.menu_5_list
+msgid "Model Summary of psychological evaluation"
+msgstr "Módelo de Resumen de Evalución psicológica"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.preempleo_action_window
+#: model:ir.ui.menu,name:hr_candidato.menu_2_list
+msgid "Model medical checkup"
+msgstr "Modelo de Chequeo médico"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.evalua_action_window
+#: model:ir.model,name:hr_candidato.model_model_evalua
+#: model:ir.ui.menu,name:hr_candidato.menu_6_list
+msgid "Model the student is record of integral evaluation"
+msgstr "Modelo de evaluación de integral de estudiantes"
+
+#. module: hr_candidato
+#: model:ir.module.category,name:hr_candidato.module_category_hr_nomengladores
+msgid "Modulate of Standards"
+msgstr "Módulo de Nomencladores"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_solicitud_report__date_month
+msgid "Mouth"
+msgstr "Mes"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__model_psico__conclution__no
+#: model:ir.model.fields.selection,name:hr_candidato.selection__model_resumen__conclution__no
+msgid "NO"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_areac_areac__name
+#: model:ir.model.fields,field_description:hr_candidato.field_slide_aspect__name
+#: model:ir.model.fields,field_description:hr_candidato.field_ueb_ueb__name
+#: model_terms:ir.ui.view,arch_db:hr_candidato.anno_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.cursos_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.etapas_doc_view
+#: model_terms:ir.ui.view,arch_db:hr_candidato.solicitud_doc_view
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_solicitud_report__date_month__11
+msgid "November"
+msgstr "Noviembre"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_hr_applicant__Observations
+msgid "Observations"
+msgstr "Observaciones"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_solicitud_report__date_month__10
+msgid "October"
+msgstr "Octubre"
+
+#. module: hr_candidato
+#: model:res.groups,name:hr_candidato.group_hr_candidato_user
+#: model:res.groups,name:hr_candidato.group_hr_modelo_user
+#: model:res.groups,name:hr_candidato.group_hr_nomengladores_user
+msgid "Office"
+msgstr "Personal de Oficcina"
+
+#. module: hr_candidato
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_anno_report_form
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_curso_report_form
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_etapas_report_form
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_puesto_report_form
+#: model_terms:ir.ui.view,arch_db:hr_candidato.view_hr_solicitud_report_form
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: hr_candidato
+#: model:ir.module.category,name:hr_candidato.module_category_hr_candidato
+msgid "Process Selection"
+msgstr "Solicitud de Candidato"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_model_evalua__quality
+msgid "Quality Evaluation"
+msgstr "Evalución Cualitativa"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_model_psico__recommendations
+#: model:ir.model.fields,field_description:hr_candidato.field_model_resumen__recommendations
+msgid "Recommendations"
+msgstr "Recomendaciones"
+
+#. module: hr_candidato
+#: model:ir.ui.menu,name:hr_candidato.menu_3
+msgid "Reports"
+msgstr "Reportes"
+
+#. module: hr_candidato
+#: model:ir.model.fields.selection,name:hr_candidato.selection__hr_solicitud_report__date_month__09
+msgid "September"
+msgstr "Septiembre"
+
+#. module: hr_candidato
+#: model_terms:ir.ui.view,arch_db:hr_candidato.etapas_doc_view
+msgid "Stage"
+msgstr "Etapas"
+
+#. module: hr_candidato
+#: model:ir.model,name:hr_candidato.model_hr_recruitment_stage
+#: model:ir.ui.menu,name:hr_candidato.menu_12_list
+msgid "Stage of the process of selection"
+msgstr "Etapa del proceso de selección"
+
+#. module: hr_candidato
+#: model:ir.ui.menu,name:hr_candidato.menu_2
+msgid "Standards"
+msgstr "Nomencladores"
+
+#. module: hr_candidato
+#: model:ir.model.constraint,message:hr_candidato.constraint_ueb_ueb_code_unique
+msgid "Tag code already exists"
+msgstr "El nombre ya existe"
+
+#. module: hr_candidato
+#: model:ir.model.constraint,message:hr_candidato.constraint_areac_areac_code_unique
+#: model:ir.model.constraint,message:hr_candidato.constraint_areac_areac_name_unique
+#: model:ir.model.constraint,message:hr_candidato.constraint_hr_applicant_ci_unique
+#: model:ir.model.constraint,message:hr_candidato.constraint_hr_job_code_unique
+#: model:ir.model.constraint,message:hr_candidato.constraint_hr_recruitment_stage_code_unique
+#: model:ir.model.constraint,message:hr_candidato.constraint_res_company_code_unique
+#: model:ir.model.constraint,message:hr_candidato.constraint_slide_aspect_code_unique
+#: model:ir.model.constraint,message:hr_candidato.constraint_slide_aspect_name_unique
+#: model:ir.model.constraint,message:hr_candidato.constraint_slide_channel_code_unique
+#: model:ir.model.constraint,message:hr_candidato.constraint_slide_channel_name_unique
+#: model:ir.model.constraint,message:hr_candidato.constraint_ueb_ueb_name_unique
+msgid "Tag name already exists"
+msgstr "Ya esto existe"
+
+#. module: hr_candidato
+#: model:ir.actions.act_window,name:hr_candidato.ueb_action_window
+#: model:ir.model,name:hr_candidato.model_ueb_ueb
+#: model:ir.model.fields,field_description:hr_candidato.field_areac_areac__ueb
+#: model:ir.ui.menu,name:hr_candidato.menu_8_list
+msgid "UEB"
+msgstr ""
+
+#. module: hr_candidato
+#: model:ir.ui.menu,name:hr_candidato.menu_15_list
+msgid "User"
+msgstr "Usuario"
+
+#. module: hr_candidato
+#: model:ir.actions.report,name:hr_candidato.anno_report
+msgid "Ver Anexo-DS5 List of candidates approved per year"
+msgstr "Ver Anexo-DS5 Listado de candidatos aprobados por año"
+
+#. module: hr_candidato
+#: model_terms:ir.ui.view,arch_db:hr_candidato.anno_doc_view
+msgid "Year"
+msgstr "Año"
+
+#. module: hr_candidato
+#: model:ir.model.fields,field_description:hr_candidato.field_modelo_area__applicant_id
+msgid "applicant"
+msgstr "Candidato"
+
+#. module: hr_candidato
+#: model:ir.model,name:hr_candidato.model_report_hr_candidato_puesto_doc_view
+msgid "report.hr_candidato.puesto_doc_view"
+msgstr "Candidatos a verificar por puesto de trabajo"

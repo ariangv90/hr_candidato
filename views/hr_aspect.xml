@@ -1,0 +1,25 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="aspectos_list">
+      <field name="name">Aspect to evaluate course of habilitation</field>
+      <field name="model">slide.aspect</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="aspectos_action_window">
+      <field name="name">Aspect to evaluate course of habilitation</field>
+      <field name="res_model">slide.aspect</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+  </data>
+</odoo>
