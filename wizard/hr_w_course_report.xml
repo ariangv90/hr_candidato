@@ -15,7 +15,7 @@
             </field>
         </record>
         <record id="action_hr_curso_report" model="ir.actions.act_window">
-                <field name="name">Candidates' list for courses</field>
+                <field name="name">Candidates list for courses</field>
                 <field name="type">ir.actions.act_window</field>
                 <field name="res_model">hr.curso.report</field>
                 <field name="view_mode">form</field>
