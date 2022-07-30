@@ -1,0 +1,27 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="preempleo_list">
+      <field name="name">Model medical checkup</field>
+      <field name="model">model.checkup</field>
+      <field name="arch" type="xml">
+        <tree editable="bottom">
+          <field name="applicant_id"/>
+          <field name="job_id"/>
+          <field name="area"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="preempleo_action_window">
+      <field name="name">Model medical checkup</field>
+      <field name="res_model">model.checkup</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="preempleo_list"/>
+    </record>
+
+
+  </data>
+</odoo>

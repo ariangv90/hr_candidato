@@ -1,0 +1,220 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_modelo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20220214\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-14 14:42+0000\n"
+"PO-Revision-Date: 2022-07-14 14:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_checkup__applicant_id
+#: model:ir.model.fields,field_description:hr_modelo.field_model_evalua__applicant_id
+#: model:ir.model.fields,field_description:hr_modelo.field_model_psico__applicant_id
+#: model:ir.model.fields,field_description:hr_modelo.field_model_resumen__applicant_id
+#: model:ir.model.fields,field_description:hr_modelo.field_model_searchre__applicant_id
+msgid "Applicant"
+msgstr "Candidato"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_checkup__area
+msgid "Area of Health"
+msgstr "Area de Salud"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_psico__conclution
+#: model:ir.model.fields,field_description:hr_modelo.field_model_resumen__conclution
+msgid "Concluciones"
+msgstr "Concluciones"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_evalua__course_id
+msgid "Course of Habilitation"
+msgstr "Curso de Habilitación"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_checkup__create_uid
+#: model:ir.model.fields,field_description:hr_modelo.field_model_evalua__create_uid
+#: model:ir.model.fields,field_description:hr_modelo.field_model_psico__create_uid
+#: model:ir.model.fields,field_description:hr_modelo.field_model_resumen__create_uid
+#: model:ir.model.fields,field_description:hr_modelo.field_model_searchre__create_uid
+#: model:ir.model.fields,field_description:hr_modelo.field_modelo_area__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_checkup__create_date
+#: model:ir.model.fields,field_description:hr_modelo.field_model_evalua__create_date
+#: model:ir.model.fields,field_description:hr_modelo.field_model_psico__create_date
+#: model:ir.model.fields,field_description:hr_modelo.field_model_resumen__create_date
+#: model:ir.model.fields,field_description:hr_modelo.field_model_searchre__create_date
+#: model:ir.model.fields,field_description:hr_modelo.field_modelo_area__create_date
+msgid "Created on"
+msgstr "Creado"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_checkup__display_name
+#: model:ir.model.fields,field_description:hr_modelo.field_model_evalua__display_name
+#: model:ir.model.fields,field_description:hr_modelo.field_model_psico__display_name
+#: model:ir.model.fields,field_description:hr_modelo.field_model_resumen__display_name
+#: model:ir.model.fields,field_description:hr_modelo.field_model_searchre__display_name
+#: model:ir.model.fields,field_description:hr_modelo.field_modelo_area__display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_evalua__final_evaluation
+msgid "Final evaluation"
+msgstr "Evalución de Final"
+
+#. module: hr_modelo
+#: model:ir.module.category,description:hr_modelo.module_category_hr_modelo
+msgid "Help, Administration for Modulate of Models."
+msgstr "Ayuda, Administración para el Módulo de Modelos"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_checkup__id
+#: model:ir.model.fields,field_description:hr_modelo.field_model_evalua__id
+#: model:ir.model.fields,field_description:hr_modelo.field_model_psico__id
+#: model:ir.model.fields,field_description:hr_modelo.field_model_resumen__id
+#: model:ir.model.fields,field_description:hr_modelo.field_model_searchre__id
+#: model:ir.model.fields,field_description:hr_modelo.field_modelo_area__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_searchre__informative_interest
+msgid "Informative interest"
+msgstr "Información de Interes"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_checkup__job_id
+#: model:ir.model.fields,field_description:hr_modelo.field_modelo_area__job_id
+msgid "Job Position"
+msgstr "Puesto de Trabajo"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_checkup____last_update
+#: model:ir.model.fields,field_description:hr_modelo.field_model_evalua____last_update
+#: model:ir.model.fields,field_description:hr_modelo.field_model_psico____last_update
+#: model:ir.model.fields,field_description:hr_modelo.field_model_resumen____last_update
+#: model:ir.model.fields,field_description:hr_modelo.field_model_searchre____last_update
+#: model:ir.model.fields,field_description:hr_modelo.field_modelo_area____last_update
+msgid "Last Modified on"
+msgstr "Ultima Modificación"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_checkup__write_uid
+#: model:ir.model.fields,field_description:hr_modelo.field_model_evalua__write_uid
+#: model:ir.model.fields,field_description:hr_modelo.field_model_psico__write_uid
+#: model:ir.model.fields,field_description:hr_modelo.field_model_resumen__write_uid
+#: model:ir.model.fields,field_description:hr_modelo.field_model_searchre__write_uid
+#: model:ir.model.fields,field_description:hr_modelo.field_modelo_area__write_uid
+msgid "Last Updated by"
+msgstr "Ultima Acutualización por"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_checkup__write_date
+#: model:ir.model.fields,field_description:hr_modelo.field_model_evalua__write_date
+#: model:ir.model.fields,field_description:hr_modelo.field_model_psico__write_date
+#: model:ir.model.fields,field_description:hr_modelo.field_model_resumen__write_date
+#: model:ir.model.fields,field_description:hr_modelo.field_model_searchre__write_date
+#: model:ir.model.fields,field_description:hr_modelo.field_modelo_area__write_date
+msgid "Last Updated on"
+msgstr "Ultima Acutualización"
+
+#. module: hr_modelo
+#: model:res.groups,name:hr_modelo.group_hr_modelo_manager
+msgid "Manager"
+msgstr "Administración"
+
+#. module: hr_modelo
+#: model:ir.ui.menu,name:hr_modelo.menu_1_list
+msgid "Military Area"
+msgstr "Area de Atención Militar"
+
+#. module: hr_modelo
+#: model:ir.module.category,name:hr_modelo.module_category_hr_modelo
+#: model:ir.ui.menu,name:hr_modelo.menu_1
+msgid "Model"
+msgstr "Modelos"
+
+#. module: hr_modelo
+#: model:ir.model,name:hr_modelo.model_model_checkup
+msgid "Model Medical checkup"
+msgstr "Modelo de Chequeo Médico"
+
+#. module: hr_modelo
+#: model:ir.actions.act_window,name:hr_modelo.action_window
+#: model:ir.model,name:hr_modelo.model_modelo_area
+msgid "Model Military Area"
+msgstr "Modelo de Area Atención Militar"
+
+#. module: hr_modelo
+#: model:ir.actions.act_window,name:hr_modelo.searchre_action_window
+#: model:ir.model,name:hr_modelo.model_model_searchre
+#: model:ir.ui.menu,name:hr_modelo.menu_3_list
+msgid "Model Search of References"
+msgstr "Model Búsqueda de Referencias"
+
+#. module: hr_modelo
+#: model:ir.actions.act_window,name:hr_modelo.psico_action_window
+#: model:ir.actions.act_window,name:hr_modelo.resumen_action_window
+#: model:ir.model,name:hr_modelo.model_model_resumen
+#: model:ir.ui.menu,name:hr_modelo.menu_4_list
+msgid "Model Summary of Labor verifications"
+msgstr "Modelo de Resumen de Verificación Laboral"
+
+#. module: hr_modelo
+#: model:ir.model,name:hr_modelo.model_model_psico
+#: model:ir.ui.menu,name:hr_modelo.menu_5_list
+msgid "Model Summary of psychological evaluation"
+msgstr "Módelo de Resumen de Evalución psicológica"
+
+#. module: hr_modelo
+#: model:ir.actions.act_window,name:hr_modelo.preempleo_action_window
+#: model:ir.ui.menu,name:hr_modelo.menu_2_list
+msgid "Model medical checkup"
+msgstr "Modelo de Chequeo médico"
+
+#. module: hr_modelo
+#: model:ir.actions.act_window,name:hr_modelo.evalua_action_window
+#: model:ir.model,name:hr_modelo.model_model_evalua
+#: model:ir.ui.menu,name:hr_modelo.menu_6_list
+msgid "Model the student is record of integral evaluation"
+msgstr "Modelo de evaluación de integral de estudiantes"
+
+#. module: hr_modelo
+#: model:ir.model.fields.selection,name:hr_modelo.selection__model_psico__conclution__no
+#: model:ir.model.fields.selection,name:hr_modelo.selection__model_resumen__conclution__no
+msgid "NO"
+msgstr ""
+
+#. module: hr_modelo
+#: model:res.groups,name:hr_modelo.group_hr_modelo_user
+msgid "Office"
+msgstr "Oficina"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_evalua__quality
+msgid "Quality Evaluation"
+msgstr "Evalución Cualitativa"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_model_psico__recommendations
+#: model:ir.model.fields,field_description:hr_modelo.field_model_resumen__recommendations
+msgid "Recommendations"
+msgstr "Recomendaciones"
+
+#. module: hr_modelo
+#: model:ir.model.fields,field_description:hr_modelo.field_modelo_area__applicant_id
+msgid "applicant"
+msgstr "Candidato"

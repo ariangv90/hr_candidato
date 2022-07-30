@@ -1,0 +1,15 @@
+<odoo>
+     <menuitem name="Model" id="hr_modelo.menu_1" parent="hr_recruitment.menu_hr_recruitment_root" groups="group_hr_modelo_user"/>
+    <menuitem name="Military Area" id="hr_modelo.menu_1_list" parent="hr_modelo.menu_1"
+              action="hr_modelo.action_window" groups="group_hr_modelo_user"/>
+    <menuitem name="Model medical checkup" id="hr_modelo.menu_2_list" parent="hr_modelo.menu_1"
+              action="preempleo_action_window" groups="group_hr_modelo_user"/>
+    <menuitem name="Model Search of References" id="hr_modelo.menu_3_list" parent="hr_modelo.menu_1"
+              action="searchre_action_window" groups="group_hr_modelo_user"/>
+    <menuitem name="Model Summary of Labor verifications" id="hr_modelo.menu_4_list" parent="hr_modelo.menu_1"
+              action="resumen_action_window" groups="group_hr_modelo_user"/>
+    <menuitem name="Model Summary of psychological evaluation" id="hr_modelo.menu_5_list" parent="hr_modelo.menu_1"
+              action="psico_action_window" groups="group_hr_modelo_user"/>
+    <menuitem name="Model the student is record of integral evaluation" id="hr_modelo.menu_6_list" parent="hr_modelo.menu_1"
+              action="evalua_action_window" groups="group_hr_modelo_user"/>
+</odoo>

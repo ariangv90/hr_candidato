@@ -1,0 +1,27 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="resumen_list">
+      <field name="name">Model Summary of Labor verifications</field>
+      <field name="model">model.resumen</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="applicant_id"/>
+          <field name="conclution"/>
+          <field name="recommendations"/>
+
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="resumen_action_window">
+      <field name="name">Model Summary of Labor verifications</field>
+      <field name="res_model">model.resumen</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+  </data>
+</odoo>

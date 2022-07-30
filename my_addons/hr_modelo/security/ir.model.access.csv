@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_modelo_area,modelo.area,model_modelo_area,base.group_user,1,1,1,1
+access_model_checkup,model_checkup,model_model_checkup,base.group_user,1,1,1,1
+access_model_searchre,model_searchre,model_model_searchre,base.group_user,1,1,1,1
+access_model_resumen,model_resumen,model_model_resumen,base.group_user,1,1,1,1
+access_model_psico,model.psico,model_model_psico,base.group_user,1,1,1,1
+access_model_evalua,model_evalua,model_model_evalua,base.group_user,1,1,1,1
+
