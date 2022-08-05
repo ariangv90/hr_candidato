@@ -1,0 +1,165 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="red_line_list">
+      <field name="name">Applicant  Line List</field>
+      <field name="model">res.line</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="number_line"/>
+          <field name="client"/>
+          <field name="make_request"/>
+          <field name="type_request"/>
+          <field name="type_client"/>
+          <field name="type_service"/>
+          <field name="speed" avg="speed"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="res_line_form" model="ir.ui.view">
+        <field name="name">Red Line Form</field>
+        <field name="model">res.line</field>
+        <field name="arch" type="xml">
+           <form class="oe_structure" string="MODELO SOLICITUD SERVICIOS TX DATOS">
+
+             <sheet>
+               <group>
+                 <div class="oe_title">
+                   <h1>MODELO SOLICITUD SERVICIOS TX DATOS</h1>
+                   <h3><field name="number_line" required="True" placeholder="NUMBER LINE EJ. FR 0000"/></h3>
+                 </div>
+               </group>
+               <group>
+                   <group>
+                      <field name="make_request"/>
+                      <field name="client"/>
+                      <field name="subcriptor"/>
+                      <field name="type_request"/>
+                      <field name="type_client"/>
+                   </group>
+                   <group>
+                      <field name="type_service"/>
+                      <field name="number_phone" attrs="{'invisible': [('type_service', '!=', 'ADSL')]}" widget="phone"/>
+                      <field name="speed"/>
+                      <field name="monetary1"/>
+                      <field name="address"/>
+                   </group>
+                  <group>
+                      <field name="range_ip"/>
+                      <field name="date_begin"/>
+                      <field name="date_end"/>
+                  </group>
+                  <group>
+                      <field name="eventual"/>
+                      <field name="technical_contact"/>
+                      <field name="phone_technical" widget="phone"/>
+                  </group>
+                </group>
+                <group string="Data Services X25/X28" attrs="{'invisible': [('type_service', '!=', 'X25/ X28')]}">
+                  <group>
+                    <field name="long_package"/>
+                    <field name="canals_logic"/>
+                    <field name="long_windows"/>
+                  </group>
+                  <group>
+                    <field name="switched"/>
+                    <field name="type_protocol"/>
+                  </group>
+                  <field class="o_field_text" name="description_X28" placeholder="Description X28"/>
+                </group>
+                <group attrs="{'invisible': [('type_service', '!=', 'F.RELAY')]}" string="DATA FOR FRAME RELAY SERVICES (IF YOU HAVE ONLY ONE CONNECTION DESTINATION,LEAVE THE REST BLANK, IF THERE ARE MORE THAN 3 CONNECTION POINTS, ADD IN COMMENTS)">
+                  <group>
+                    <field name="cir"/>
+                    <field name="gateway_destination"/>
+                    <field name="technical_contact1"/>
+                  </group>
+                  <group>
+                    <field name="cir1"/>
+                    <field name="gateway_destination1"/>
+                    <field name="technical_contact2"/>
+                  </group>
+                  <group>
+                    <field name="cir2"/>
+                    <field name="gateway_destination2"/>
+                    <field name="technical_contact3"/>
+                  </group>
+                  <field name="description_frame" placeholder="Description Frame Relay"/>
+                </group>
+
+                <group attrs="{'invisible': [('type_service', '!=', 'ADSL')]}" string="DATA FOR LEASED LINE SERVICES (IF THERE ARE MORE THAN 1 CONNECTION POINT, ADD IN OBSERVATIONS)">
+
+                    <field name="address_extre"/>
+                  <field name="technical_contact4"/>
+                  <field name="description_data" placeholder="Description DATA"/>
+                </group>
+                 <div class="row">
+                 <div t-attf-class="col-auto ml-auto">
+                     <table class="table table-sm"  t-attf-style="border-color: {{table_border_color}}">
+                         <tr class="o_subtotal">
+                             <td class="pr-5">
+                                <strong>NOMBRE Y APELLIDOS DEL SOLICITANTE DEL SERVICIO:</strong>
+                             </td>
+                             <td class="pr-5">
+                                <field name="contact"/>
+                             </td>
+                         </tr>
+                         <tr class="o_total">
+                            <td class="pr-5">
+                                <strong>JOB POSITION:</strong>
+                            </td>
+                             <td class="pr-5">
+                                <field name="job"/>
+                            </td>
+                         </tr>
+                     </table>
+                    </div>
+                 </div>
+             </sheet>
+        </form>
+
+        </field>
+    </record>
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="red_line_action_window">
+      <field name="name">Applicant Line List </field>
+      <field name="res_model">res.line</field>
+      <field name="view_mode">tree,form</field>
+
+    </record>
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="red_ip.action_server">
+      <field name="name">Red_ip server</field>
+      <field name="model_id" ref="model_red_ip_red_ip"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="Red_ip" id="red_ip.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="red_ip.menu_1" parent="red_ip.menu_root"/>
+    <menuitem name="Menu 2" id="red_ip.menu_2" parent="red_ip.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="red_ip.menu_1_list" parent="red_ip.menu_1"
+              action="red_ip.action_window"/>
+    <menuitem name="Server to list" id="red_ip" parent="red_ip.menu_2"
+              action="red_ip.action_server"/>
+-->
+  </data>
+</odoo>

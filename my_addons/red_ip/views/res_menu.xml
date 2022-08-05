@@ -1,0 +1,10 @@
+<odoo>
+
+<!-- Top menu item -->
+    <menuitem name="Red IP" id="red_ip.menu_root" action="red_line_action_window"/>
+
+    <menuitem name="CONFIG" id="red_ip.menu_1" parent="red_ip.menu_root"/>
+     <menuitem name="BANK" id="red_ip.menu_1_1" parent="red_ip.menu_1" action="base.action_res_bank_form"/>
+     <menuitem name="MUNICIPALITY" id="red_ip.menu_1_2" parent="red_ip.menu_1" action="action_list_municipios"/>
+
+</odoo>
