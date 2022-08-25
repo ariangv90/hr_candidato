@@ -1,3 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_res_line,res.line,model_res_line,base.group_user,1,1,1,1
 access_res_municipality,res.municipality,model_res_municipality,base.group_user,1,1,1,1
+access_res_os,res.os,model_res_os,base.group_user,1,1,1,1
+access_res_equipment,res.equipment,model_res_equipment,base.group_user,1,1,1,1
+access_res_network_card,res.network.card,model_res_network_card,base.group_user,1,1,1,1
+access_res_type_equipment,res.type.equipment,model_res_type_equipment,base.group_user,1,1,1,1

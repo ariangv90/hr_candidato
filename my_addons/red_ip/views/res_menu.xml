@@ -3,8 +3,17 @@
 <!-- Top menu item -->
     <menuitem name="Red IP" id="red_ip.menu_root" action="red_line_action_window"/>
 
-    <menuitem name="CONFIG" id="red_ip.menu_1" parent="red_ip.menu_root"/>
+
+     <menuitem name="CONFIG" id="red_ip.menu_1" parent="red_ip.menu_root"/>
      <menuitem name="BANK" id="red_ip.menu_1_1" parent="red_ip.menu_1" action="base.action_res_bank_form"/>
      <menuitem name="MUNICIPALITY" id="red_ip.menu_1_2" parent="red_ip.menu_1" action="action_list_municipios"/>
+
+    <menuitem name="EQUIPMENT" id="red_ip.menu_2" parent="red_ip.menu_root"/>
+    <menuitem name="NETWORK CARD" id="red_ip.menu_2_1" parent="red_ip.menu_2" action="red_ip.action_network_card"/>
+    <menuitem name="S.O" id="red_ip.menu_2_2" parent="red_ip.menu_2" action="red_ip.action_res_os"/>
+    <menuitem name="TYPE EQUIPMENT" id="red_ip.menu_2_3" parent="red_ip.menu_2" action="red_ip.action_res_equipment"/>
+    <menuitem name="EQUIPMENT" id="red_ip.menu_2_4" parent="red_ip.menu_2" action="red_ip.action_res_equipment"/>
+
+
 
 </odoo>

@@ -1,0 +1,147 @@
+<odoo>
+    <data>
+    <record model="ir.actions.server" id="equipment_action_server">
+      <field name="name">Ping</field>
+      <field name="model_id" ref="model_res_equipment"/>
+      <field name="binding_model_id" ref="model_res_equipment"/>
+        <field name="binding_view_types">list</field>
+      <field name="state">code</field>
+      <field name="code">
+        action = records.server_ping()
+      </field>
+    </record>
+
+    <record model="ir.actions.server" id="equipment_nslookup_action_server">
+      <field name="name">nslookup A</field>
+      <field name="model_id" ref="model_res_equipment"/>
+      <field name="binding_model_id" ref="model_res_equipment"/>
+        <field name="binding_view_types">list</field>
+      <field name="state">code</field>
+      <field name="code">
+        action = records.server_nsloockup()
+      </field>
+    </record>
+
+    <record id="action_res_os" model="ir.actions.act_window">
+            <field name="name">SO</field>
+            <field name="res_model">res.os</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">OS</p>
+            </field>
+    </record>
+
+        <record id="action_type_equipment" model="ir.actions.act_window">
+            <field name="name">Type Equipment</field>
+            <field name="res_model">res.type.equipment</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Type Equipment</p>
+            </field>
+    </record>
+
+        <record id="action_network_card" model="ir.actions.act_window">
+            <field name="name">Network Card</field>
+            <field name="res_model">res.network.card</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Network Card</p>
+            </field>
+    </record>
+
+        <record id="action_res_equipment" model="ir.actions.act_window">
+            <field name="name">Equipment</field>
+            <field name="res_model">res.equipment</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Equipment</p>
+            </field>
+    </record>
+    <record id="res_equipment_view" model="ir.ui.view">
+        <field name="name">EQUIPMENT</field>
+        <field name="model">res.equipment</field>
+        <field name="arch" type="xml">
+            <form>
+              <sheet>
+                  <div class="oe_title">
+                     <h1>EQUIPMENT</h1>
+                   </div>
+                  <div>
+                      <img src="/red_ip/static/description/firewall.png" alt="image description" widget='image' attrs="{'invisible': [('type_equipment', '!=', 'FIREWALL')]}" class="oe_avatar"/>
+                      <img src="/red_ip/static/description/router.png" alt="image description" widget='image' attrs="{'invisible': [('type_equipment', '!=', 'ROUTER')]}" class="oe_avatar"/>
+                      <img src="/red_ip/static/description/server.png" alt="image description" widget='image' attrs="{'invisible': [('type_equipment', '!=', 'SERVER')]}" class="oe_avatar"/>
+                      <img src="/red_ip/static/description/switch.jpeg" alt="image description" attrs="{'invisible': [('type_equipment', '!=', 'SWITCH')]}" widget='image' class="oe_avatar"/>
+                      <img src="/red_ip/static/description/pc.jpeg" alt="image description" attrs="{'invisible': [('type_equipment', '!=', 'PC')]}" widget='image' class="oe_avatar"/>
+                  </div>
+                <group string="GENERAL">
+
+                    <field name="type_equipment"/>
+                    <field name="nivel_parent"/>
+                    <field name="gateway"/>
+                    <field name="networkcard"/>
+                </group>
+                <group string="PC OR SERVER" attrs="{'invisible': [('type_equipment', '!=', 'PC') , ('type_equipment', '!=', 'SERVER')]}">
+                    <group>
+                        <div class="oe_title">
+                            <h3>*Ram</h3>
+                        </div>
+                        <field name="brand_ram"/>
+                        <field name="speed_ram"/>
+                        <field name="fre_ram"/>
+                        <field name="cont_ram"/>
+                        <field name="socket_ram"/>
+                    </group>
+                    <group>
+                        <div class="oe_title">
+                          <h3>*Disk</h3>
+                        </div>
+                        <field name="brand_disk"/>
+                        <field name="size"/>
+                        <field name="array1"/>
+                        <field name="cont_disk"/>
+                    </group>
+                    <group>
+                        <div class="oe_title">
+                         <h3>*System O.</h3>
+                        </div>
+                     <field name="os_ids"/>
+                    </group>
+                </group>
+                <group string="SWITCH OR ROUTER" attrs="{'invisible': [('type_equipment', '!=', 'ROUTER'), ('type_equipment', '!=', 'SWITCH')]}">
+                    <field name="brand_router"/>
+                    <field name="red_line_id"/>
+                    <field name="speed"/>
+                    <field name="type_connetion"/>
+                </group>
+
+              </sheet>
+            </form>
+        </field>
+    </record>
+        <!--Listas Tree-->
+    <record model="ir.ui.view" id="res_equipment_list">
+      <field name="name">Equipment list</field>
+      <field name="model">res.equipment</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="type_equipment"/>
+          <field name="nivel_parent"/>
+          <field name="gateway"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="res_networkcard_list">
+      <field name="name">Networkcard list</field>
+      <field name="model">res.network.card</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="ip"/>
+          <field name="brand"/>
+          <field name="speed"/>
+          <field name="gateway"/>
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>
+
