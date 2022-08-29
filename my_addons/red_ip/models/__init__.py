@@ -3,4 +3,4 @@
 from . import res_applicant_line
 from . import res_bank
 from . import res_municipality
-from . import res_team
+from . import res_equipment

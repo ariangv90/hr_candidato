@@ -21,15 +21,16 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
+    "external_dependencies": {"python": ["dnspython"]},
 
     # always loaded
     'data': [
         'security/ir.model.access.csv',
-        'views/res_menu.xml',
         'views/res_line.xml',
         'views/res_bank.xml',
         'views/res_municipality.xml',
-
+        'views/res_equipment.xml',
+        'views/res_menu.xml',
 
         #'views/templates.xml',
     ],

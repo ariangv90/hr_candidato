@@ -49,14 +49,7 @@
             </field>
     </record>
 
-        <record id="action_res_equipment" model="ir.actions.act_window">
-            <field name="name">Equipment</field>
-            <field name="res_model">res.equipment</field>
-            <field name="view_mode">tree,form</field>
-            <field name="help" type="html">
-                <p class="o_view_nocontent_smiling_face">Equipment</p>
-            </field>
-    </record>
+
     <record id="res_equipment_view" model="ir.ui.view">
         <field name="name">EQUIPMENT</field>
         <field name="model">res.equipment</field>
@@ -74,7 +67,10 @@
                       <img src="/red_ip/static/description/pc.jpeg" alt="image description" attrs="{'invisible': [('type_equipment', '!=', 'PC')]}" widget='image' class="oe_avatar"/>
                   </div>
                 <group string="GENERAL">
-
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="name_dns"/>
+                    <field name="name_complete"/>
                     <field name="type_equipment"/>
                     <field name="nivel_parent"/>
                     <field name="gateway"/>
@@ -118,18 +114,63 @@
             </form>
         </field>
     </record>
-        <!--Listas Tree-->
+        <!--Listas kanban-->
+    <record model="ir.ui.view" id="res_equipment_kanban">
+      <field name="name">Equipment kanban</field>
+      <field name="model">res.equipment</field>
+      <field name="priority">10</field>
+      <field name="arch" type="xml">
+        <kanban class="o_res_partner_kanban">
+              <field name="code"/>
+              <field name="name"/>
+              <field name="name_complete"/>
+              <field name="type_equipment"/>
+              <field name="nivel_parent"/>
+              <field name="gateway"/>
+              <templates>
+                  <t t-name="kanban-box">
+                   <div class="oe_kanban_global_click">
+                    <div class="o_kanban_record_has_image_fill o_hr_kanban_record">
+                      <div>
+                          <img src="/red_ip/static/description/firewall.png" alt="image description" widget='image' attrs="{'invisible': [('type_equipment', '!=', 'FIREWALL')]}" class="oe_avatar"/>
+                          <img src="/red_ip/static/description/router.png" alt="image description" widget='image' attrs="{'invisible': [('type_equipment', '!=', 'ROUTER')]}" class="oe_avatar"/>
+                          <img src="/red_ip/static/description/server.png" alt="image description" widget='image' attrs="{'invisible': [('type_equipment', '!=', 'SERVER')]}" class="oe_avatar"/>
+                          <img src="/red_ip/static/description/switch.jpeg" alt="image description" attrs="{'invisible': [('type_equipment', '!=', 'SWITCH')]}" widget='image' class="oe_avatar"/>
+                          <img src="/red_ip/static/description/pc.jpeg" alt="image description" attrs="{'invisible': [('type_equipment', '!=', 'PC')]}" widget='image' class="oe_avatar"/>
+                      </div>
+                        <div class="oe_kanban_details d-flex flex-columns">
+                            <div class=""/>
+                            <ul>
+                                <li><strong>Code: <field name="code"/></strong></li>
+                                <li>Name: <field name="name"/></li>
+                                <li>Name DNS: <field name="name_dns"/></li>
+                                <li><strong>Complete Name: <field name="name_complete"/></strong></li>
+                                <li>Type Equipment: <field name="type_equipment"/></li>
+                                <li>Gateway: <field name="gateway"/></li>
+                            </ul>
+                        </div>
+                     </div>
+                    </div>
+                  </t>
+              </templates>
+        </kanban>
+      </field>
+    </record>
+
     <record model="ir.ui.view" id="res_equipment_list">
       <field name="name">Equipment list</field>
       <field name="model">res.equipment</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="type_equipment"/>
-          <field name="nivel_parent"/>
-          <field name="gateway"/>
+              <field name="code"/>
+              <field name="name_complete"/>
+              <field name="type_equipment"/>
+              <field name="nivel_parent"/>
+              <field name="gateway"/>
         </tree>
       </field>
     </record>
+
     <record model="ir.ui.view" id="res_networkcard_list">
       <field name="name">Networkcard list</field>
       <field name="model">res.network.card</field>
@@ -137,11 +178,34 @@
         <tree>
           <field name="ip"/>
           <field name="brand"/>
-          <field name="speed"/>
+          <field name="speed" avg="speed"/>
           <field name="gateway"/>
         </tree>
       </field>
     </record>
+    <record id="action_res_equipment" model="ir.actions.act_window">
+            <field name="name">Equipment</field>
+            <field name="res_model">res.equipment</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Equipment</p>
+            </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="res_equipment_search">
+            <field name="name">res.equipment.search</field>
+            <field name="model">res.equipment</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="type_equipment" string="Type Equipment"/>
+                    <field name="name" string="Name"/>
+                    <group expand="0" string="Group By">
+                        <filter name="group_operativo" string="System Operativo" domain="[]" context="{'group_by': 'os_ids'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
   </data>
 </odoo>
 

@@ -11,7 +11,7 @@
     <menuitem name="EQUIPMENT" id="red_ip.menu_2" parent="red_ip.menu_root"/>
     <menuitem name="NETWORK CARD" id="red_ip.menu_2_1" parent="red_ip.menu_2" action="red_ip.action_network_card"/>
     <menuitem name="S.O" id="red_ip.menu_2_2" parent="red_ip.menu_2" action="red_ip.action_res_os"/>
-    <menuitem name="TYPE EQUIPMENT" id="red_ip.menu_2_3" parent="red_ip.menu_2" action="red_ip.action_res_equipment"/>
+    <menuitem name="TYPE EQUIPMENT" id="red_ip.menu_2_3" parent="red_ip.menu_2" action="red_ip.action_type_equipment"/>
     <menuitem name="EQUIPMENT" id="red_ip.menu_2_4" parent="red_ip.menu_2" action="red_ip.action_res_equipment"/>
 
 

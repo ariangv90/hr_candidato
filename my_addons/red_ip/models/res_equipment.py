@@ -7,6 +7,7 @@ import dns.resolver
 class typeequipment(models.Model):
     _name = 'res.type.equipment'
     _description = ''
+    _rec_name = 'name'
 
     name = fields.Char(string='Name')
 
@@ -15,6 +16,7 @@ class typeequipment(models.Model):
 class OS(models.Model):
     _name = 'res.os'
     _description = ''
+    _rec_name = 'name'
 
     name = fields.Char(string='Name OS')
 
@@ -33,6 +35,7 @@ class OS(models.Model):
 class networkcard(models.Model):
     _name = 'res.network.card'
     _description = ''
+    _rec_name = 'ip'
 
     ip = fields.Char(string='IP')
 
@@ -51,7 +54,15 @@ class networkcard(models.Model):
 class resequipment(models.Model):
     _name='res.equipment'
     _description = ''
+    _rec_name = 'name_complete'
 
+    code = fields.Char(string='Code')
+
+    name = fields.Char(string='Name')
+
+    name_dns = fields.Char(string='Name DNS')
+
+    name_complete = fields.Char(string='Name Complete',store=True)
 
     type_equipment = fields.Selection([
         ('ROUTER','ROUTER'),
@@ -70,9 +81,13 @@ class resequipment(models.Model):
     #Server o pc
     #Ram
     brand_ram = fields.Char(string='Brand Ram')
+
     speed_ram = fields.Float(string='Size Ram')
+
     fre_ram = fields.Float(string='Fre Ram')
+
     cont_ram = fields.Float(string='Cont Ram')
+
     socket_ram = fields.Float(string='Cont Socket Ram')
 
     #Disk
@@ -92,18 +107,30 @@ class resequipment(models.Model):
 
     #Switch o Router
     brand_router = fields.Char(string='Brand Router')
+
     red_line_id = fields.Many2one('res.line',string='Applicant Line')
+
     speed = fields.Float(string='Speed Line',readonly=True)
+
     type_connetion = fields.Float(string='Type Conection', readonly=True)
 
     _sql_constraints = [
-        ('networkcard_uniq', 'unique(networkcard)', '¡The code areadly exists!')
+        ('networkcard_uniq', 'unique(networkcard)', '¡The code areadly exists!'),
+        ('code_uniq', 'unique(code)', '¡The code areadly exists!'),
+        ('name_uniq', 'unique(name)', '¡The code areadly exists!')
     ]
 
     @api.onchange('networkcard')
     def change_gateway(self):
         for p in self.networkcard:
             self.gateway = p.gateway
+
+    @api.onchange('name', 'name_dns')
+    def _compute_name(self):
+        valor=""
+        for name in self:
+            valor = str(name.name) + "." + str(name.name_dns)
+            name.name_complete = valor
 
     def server_ping(self):
         valor = False
@@ -135,7 +162,6 @@ class resequipment(models.Model):
             resolver = dns.resolver.Resolver()
             resolver.nameservers = ['1.1.1.1', '8.8.8.8']
             result = resolver.query("www.google.com", 'A')
-            print('EntreDEspues')
             for val in result:
                 valor = val.to_text()
         except dns.resolver.NoAnswer:
