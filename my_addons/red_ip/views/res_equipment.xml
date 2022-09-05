@@ -1,5 +1,16 @@
 <odoo>
     <data>
+    <record model="ir.actions.server" id="equipment_nslookupPTR_action_server">
+      <field name="name">nslookup PTR</field>
+      <field name="model_id" ref="model_res_equipment"/>
+      <field name="binding_model_id" ref="model_res_equipment"/>
+        <field name="binding_view_types">list</field>
+      <field name="state">code</field>
+      <field name="code">
+        action = records.server_nsloockup_PTR()
+      </field>
+    </record>
+
     <record model="ir.actions.server" id="equipment_action_server">
       <field name="name">Ping</field>
       <field name="model_id" ref="model_res_equipment"/>
@@ -11,6 +22,7 @@
       </field>
     </record>
 
+
     <record model="ir.actions.server" id="equipment_nslookup_action_server">
       <field name="name">nslookup A</field>
       <field name="model_id" ref="model_res_equipment"/>
@@ -18,9 +30,11 @@
         <field name="binding_view_types">list</field>
       <field name="state">code</field>
       <field name="code">
-        action = records.server_nsloockup()
+        action = records.server_nsloockup_A()
       </field>
     </record>
+
+
 
     <record id="action_res_os" model="ir.actions.act_window">
             <field name="name">SO</field>
@@ -180,6 +194,7 @@
           <field name="brand"/>
           <field name="speed" avg="speed"/>
           <field name="gateway"/>
+          <field name="description"/>
         </tree>
       </field>
     </record>
@@ -202,6 +217,8 @@
                     <field name="name" string="Name"/>
                     <group expand="0" string="Group By">
                         <filter name="group_operativo" string="System Operativo" domain="[]" context="{'group_by': 'os_ids'}"/>
+                        <filter name="group_server" string="Type Equipment" domain="[]" context="{'group_by': 'type_equipment'}"/>
+                        <filter name="group_array1" string="Array" domain="[]" context="{'group_by': 'array1'}"/>
                     </group>
                 </search>
             </field>
