@@ -12,6 +12,7 @@ class areaAte(models.Model):
         'hr.job', string='Job Position',
     )
 
+
     @api.onchange('applicant_id')
     def change_puesto(self):
         candidatoModel = self.env['hr.applicant']
