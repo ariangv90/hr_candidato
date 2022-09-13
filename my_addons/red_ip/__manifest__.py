@@ -21,7 +21,7 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
-    "external_dependencies": {"python": ["dnspython"]},
+    "external_dependencies": {"python3": ["dnspython"],"python3": ["ipaddress"]},
 
     # always loaded
     'data': [

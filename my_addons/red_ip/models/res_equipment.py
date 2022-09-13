@@ -2,6 +2,7 @@ from odoo import api, models, fields
 import platform
 import subprocess
 import dns.resolver
+import ipaddress
 
 #Este es para saber si es un server, Firewall
 class typeequipment(models.Model):
@@ -156,17 +157,43 @@ class resequipment(models.Model):
         }
         return notification
 
-    def server_nsloockup(self):
+
+    def server_nsloockup_A(self):
         valor = ""
         try:
             resolver = dns.resolver.Resolver()
             resolver.nameservers = ['1.1.1.1', '8.8.8.8']
-            result = resolver.query("www.google.com", 'A')
+            result = resolver.query(str(self._rec_name), 'A')
             for val in result:
                 valor = val.to_text()
-        except dns.resolver.NoAnswer:
-            pass
-            print(dns.resolver.NoAnswer)
+        except:
+            Valor = 'Address not Found'
+        notification = {
+            'type': 'ir.actions.client',
+            'tag': 'display_notification',
+            'params': {
+                'title': ('Request success'),
+                'message': 'nsLOOcKUP: '+ str(valor),
+                'sticky': False,
+                'type': 'success'
+            },
+        }
+        return notification
+
+    def server_nsloockup_PTR(self):
+        valor = ""
+
+        try:
+            resolver = dns.resolver.Resolver()
+            resolver.nameservers = ['1.1.1.1', '8.8.8.8']
+
+            for a in self.networkcard:
+                result = resolver.query(str(ipaddress.ip_address(a.ip).reverse_pointer), 'PTR')
+
+                valor =+result
+
+        except:
+            Valor = 'Address not Found'
         notification = {
             'type': 'ir.actions.client',
             'tag': 'display_notification',
