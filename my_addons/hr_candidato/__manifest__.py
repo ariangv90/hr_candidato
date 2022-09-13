@@ -18,7 +18,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','hr_recruitment','website_slides','report_xlsx'],
+    'depends': ['base','hr_recruitment','website_slides','report_xlsx','auto_backup'],
 
     # always loaded
     'data': [
