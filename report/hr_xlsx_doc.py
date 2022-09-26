@@ -88,18 +88,23 @@ class reportPuesto(models.AbstractModel):
         sheet.write(row, col, 'Experience that you possess')
         col = 0
         row = 1
-        for a in data['candidato1']:
+        applicantModel = self.env['hr.applicant']
 
-            sheet.write(row, col, a['name'])
+        docs = applicantModel.search(
+             [('job_id', '=', data['job_id.id'])]
+         )
+
+        for a in docs:
+            sheet.write(row, col, str(a.name))
             col+=1
-            sheet.write(row, col, a['job_id'])
+            sheet.write(row, col, str(a.job_id.name))
             col += 1
-            sheet.write(row, col, a['ci'])
+            sheet.write(row, col, str(a.ci))
             col += 1
-            sheet.write(row, col, a['address'])
+            sheet.write(row, col, str(a.address))
             col += 1
-            sheet.write(row, col, a['grade_possesses'])
+            sheet.write(row, col, str(a.grade_possesses))
             col += 1
-            sheet.write(row, col, a['experience'])
+            sheet.write(row, col, str(a.experience))
             row += 1
             col=0

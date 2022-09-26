@@ -18,13 +18,12 @@ class areac(models.Model):
         'ueb.ueb',string='UEB'
     )
     _sql_constraints = [
-        ('code_unique', 'UNIQUE (code)', 'Tag name already exists'),
-        ('name_unique', 'UNIQUE (name)', 'Tag name already exists'),
+        ('code_unique', 'UNIQUE (code)', 'The code already exists'),
+        ('name_unique', 'UNIQUE (name)', 'The name already exists'),
     ]
 
 class hrjob(models.Model):
     _inherit = 'hr.job'
-    _description = 'Gestion Job Positions'
 
 
     code = fields.Integer(
@@ -36,5 +35,5 @@ class hrjob(models.Model):
     )
 
     _sql_constraints = [
-        ('code_unique', 'UNIQUE (code)', 'Tag name already exists'),
+        ('code_unique', 'UNIQUE (code)', 'The code already exists'),
     ]

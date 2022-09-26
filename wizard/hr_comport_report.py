@@ -1,25 +1,4 @@
-from odoo import api, fields, models, _
-from odoo.exceptions import UserError
-import babel
-from collections import defaultdict
-from datetime import date, datetime, time
-from datetime import timedelta
-from dateutil.relativedelta import relativedelta
-from pytz import timezone
-from pytz import utc
-
 from odoo import api, fields, models, tools, _
-from odoo.exceptions import UserError, ValidationError
-from odoo.exceptions import Warning
-from odoo.tools import float_utils
-import tempfile
-import binascii
-import xlrd
-import base64
-import zipfile
-from tempfile import mktemp
-from odoo.modules.module import get_module_resource, get_resource_path
-import datetime
 
 
 class hrsolicitudreport(models.TransientModel):
@@ -44,14 +23,14 @@ class hrsolicitudreport(models.TransientModel):
 
 
     def action_report(self):
-        candidato = []
-        candidatoModel = self.env['hr.applicant']
-        docs = candidatoModel.search(
+        applicant = []
+        applicantModel = self.env['hr.applicant']
+        docs = applicantModel.search(
             []
         )
         for doc in docs:
             if doc.create_date.__str__().split('-')[1].lower() == self.date_month:
-                candidato.append({
+                applicant.append({
                  'name':doc.name,
                  'ci' : doc.ci,
                  'address':doc.address,
@@ -62,7 +41,7 @@ class hrsolicitudreport(models.TransientModel):
         datas={
         'doc_model': 'hr.applicant',
          'name':self.date_month,
-          'candidato1':candidato,
+          'candidato1':applicant,
         }
         return self.env.ref('hr_candidato.solicitud_report').report_action(self,data=datas)
 
@@ -75,27 +54,13 @@ class hrpuestoreport(models.TransientModel):
     )
 
     def action_report(self):
-        candidato = []
-        candidatoModel = self.env['hr.applicant']
-
-        docs = candidatoModel.search(
-            [('job_id', '=', self.job_id.id)]
-        )
-
-        for doc in docs:
-            candidato.append({
-                'name': doc.name,
-                'ci': doc.ci,
-                'job_id': doc.job_id.name,
-                'address': doc.address,
-                'grade_possesses': doc.grade_possesses,
-                'experience': doc.experience,
-            })
+        applicant = []
 
         datas = {
             'doc_model': 'hr.applicant',
             'name': self.job_id,
-            'candidato1': candidato,
+            'candidato1': applicant,
+            'job_id.id':self.job_id.id
         }
         return self.env.ref('hr_candidato.puesto_doc_view').report_action(self, data=datas)
 
@@ -108,13 +73,13 @@ class hretatapasreport(models.TransientModel):
     )
 
     def action_report(self):
-        candidato = []
-        candidatoModel = self.env['hr.applicant']
-        docs = candidatoModel.search(
+        applicant = []
+        applicantModel = self.env['hr.applicant']
+        docs = applicantModel.search(
             [('stage_id', '=', self.etapas_id.id)]
         )
         for doc in docs:
-            candidato.append({
+            applicant.append({
                 'name': doc.name,
                 'ci': doc.ci,
                 'job_id': doc.job_id.name,
@@ -126,7 +91,7 @@ class hretatapasreport(models.TransientModel):
         datas = {
             'doc_model': 'hr.applicant',
             'name': self.etapas_id,
-            'candidato1': candidato,
+            'candidato1': applicant,
         }
         return self.env.ref('hr_candidato.etapas_report').report_action(self, data=datas)
 
@@ -140,13 +105,13 @@ class hrcursoreport(models.TransientModel):
     )
 
     def action_report(self):
-        candidato = []
-        candidatoModel = self.env['hr.applicant']
-        docs = candidatoModel.search(
+        applicant = []
+        applicantModel = self.env['hr.applicant']
+        docs = applicantModel.search(
             [('course', '=', self.course_id.id)]
         )
         for doc in docs:
-            candidato.append({
+            applicant.append({
                 'name': doc.name,
                 'ci': doc.ci,
                 'job_id': doc.job_id.name,
@@ -158,7 +123,7 @@ class hrcursoreport(models.TransientModel):
         datas = {
             'doc_model': 'hr.applicant',
             'name': self.course_id,
-            'candidato1': candidato,
+            'candidato1': applicant,
         }
         return self.env.ref('hr_candidato.cursos_report').report_action(self, data=datas)
 
@@ -194,14 +159,13 @@ class hrannoreport(models.TransientModel):
 
 
     def action_report(self):
-        candidato = []
-        candidatoModel = self.env['hr.applicant']
-        docs = candidatoModel.search([])
+        applicant = []
+        applicantModel = self.env['hr.applicant']
+        docs = applicantModel.search([])
 
         for doc in docs:
-            print(doc.create_date.__str__().split('-')[0].lower())
             if doc.create_date.__str__().split('-')[0].lower() == self.date_year:
-                candidato.append({
+                applicant.append({
                     'name': doc.name,
                     'ci': doc.ci,
                     'address': doc.address,
@@ -211,6 +175,6 @@ class hrannoreport(models.TransientModel):
         datas = {
             'doc_model': 'hr.applicant',
             'name': self.date_year,
-            'candidato1': candidato,
+            'candidato1': applicant,
         }
         return self.env.ref('hr_candidato.anno_report').report_action(self, data=datas)

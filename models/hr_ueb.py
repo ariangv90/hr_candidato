@@ -18,8 +18,8 @@ class ueb(models.Model):
     )
 
     _sql_constraints = [
-        ('code_unique', 'UNIQUE (code)', 'Tag code already exists'),
-        ('name_unique', 'UNIQUE (name)', 'Tag name already exists'),
+        ('code_unique', 'UNIQUE (code)', 'The code already exists'),
+        ('name_unique', 'UNIQUE (name)', 'The name already exists'),
     ]
     @api.model
     def create(self,vals):
@@ -32,10 +32,7 @@ class ueb(models.Model):
 
 
     def action_server(self):
-        cont = 0
-        for i in self:
-            print(i.name,i.code,i.company)
-            cont = cont+1
+        cont = len(self)
 
         notification = {
                 'type': 'ir.actions.client',
@@ -52,12 +49,11 @@ class ueb(models.Model):
 
 class stage(models.Model):
     _inherit= 'hr.recruitment.stage'
-    _description = 'Stage of the process of selection'
 
     code = fields.Integer(
         string='Code'
     )
 
     _sql_constraints = [
-        ('code_unique', 'UNIQUE (code)', 'Tag name already exists'),
+        ('code_unique', 'UNIQUE (code)', 'Tag code already exists'),
     ]

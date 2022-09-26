@@ -14,13 +14,12 @@ class aspectos(models.Model):
     )
 
     _sql_constraints = [
-        ('code_unique', 'UNIQUE (code)', 'Tag name already exists'),
-        ('name_unique', 'UNIQUE (name)', 'Tag name already exists'),
+        ('code_unique', 'UNIQUE (code)', 'The code already exists'),
+        ('name_unique', 'UNIQUE (name)', 'The name already exists'),
     ]
 
 class course(models.Model):
     _inherit = 'slide.channel'
-    _description = 'Course of habilitation'
 
 
     code = fields.Integer(
@@ -32,6 +31,6 @@ class course(models.Model):
     )
 
     _sql_constraints = [
-        ('code_unique', 'UNIQUE (code)', 'Tag name already exists'),
-        ('name_unique', 'UNIQUE (name)', 'Tag name already exists'),
+        ('code_unique', 'UNIQUE (code)', 'The code already exists'),
+        ('name_unique', 'UNIQUE (name)', 'The name already exists'),
     ]

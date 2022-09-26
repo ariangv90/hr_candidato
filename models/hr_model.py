@@ -14,14 +14,9 @@ class areaAte(models.Model):
 
 
     @api.onchange('applicant_id')
-    def change_puesto(self):
-        candidatoModel = self.env['hr.applicant']
-        candidato1 = candidatoModel.search(
-            [('id', '=', self.applicant_id.id)]
-        )
-        for p in candidato1:
-            self.job_id = p.job_id
-
+    def change_job(self):
+        if self.applicant_id:
+         self.job_id = self.applicant_id.job_id
 
 class medicalcheckup(models.Model):
     _name = 'model.checkup'
@@ -38,13 +33,9 @@ class medicalcheckup(models.Model):
     )
 
     @api.onchange('applicant_id')
-    def change_puesto(self):
-        candidatoModel = self.env['hr.applicant']
-        candidato1 = candidatoModel.search(
-            [('id', '=', self.applicant_id.id)]
-        )
-        for p in candidato1:
-            self.job_id = p.job_id
+    def change_job(self):
+        if self.applicant_id:
+            self.job_id = self.applicant_id.job_id
 
 
 class searchRe(models.Model):
@@ -118,10 +109,7 @@ class slide(models.Model):
     )
 
     @api.onchange('applicant_id')
-    def change_slide(self):
-        candidatoModel = self.env['hr.applicant']
-        candidato1 = candidatoModel.search(
-            [('id', '=', self.applicant_id.id)]
-        )
-        for p in candidato1:
-            self.course_id = p.course
+    def change_course(self):
+        if self.applicant_id:
+            self.course_id = self.applicant_id.course
+

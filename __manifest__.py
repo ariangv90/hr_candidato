@@ -18,7 +18,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','hr_recruitment','website_slides','report_xlsx','auto_backup'],
+    'depends': ['base','hr_recruitment','website_slides','report_xlsx'],
 
     # always loaded
     'data': [
@@ -36,7 +36,6 @@
         'report/hr_stage_pdf.xml',
         'report/hr_course_pdf.xml',
         'report/hr_year_pdf.xml',
-        'views/templates.xml',
         'views/hr_recruitment.xml',
         'views/hr_area.xml',
         'views/templates.xml',

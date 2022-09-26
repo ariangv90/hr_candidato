@@ -5,7 +5,6 @@ from odoo import models, fields, api
 
 class HrApplicants(models.Model):
      _inherit = 'hr.applicant'
-     _description = 'Gestion of Applicants'
 
      ci = fields.Char(
           string='CI'
@@ -37,5 +36,5 @@ class HrApplicants(models.Model):
      )
 
      _sql_constraints = [
-          ('ci_unique', 'UNIQUE (ci)', 'Tag name already exists'),
+          ('ci_unique', 'UNIQUE (ci)', 'The ci already exists'),
      ]
