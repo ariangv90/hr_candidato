@@ -2,19 +2,20 @@ from odoo import models, fields, api
 from odoo.exceptions import Warning
 
 
+
 class ueb(models.Model):
-    _name = 'ueb.ueb'
-    _description = 'UEB'
+    _name = "ueb.ueb"
+    _description = "UEB"
 
     name = fields.Char(
-        string='Name'
+        string = "Name"
     )
     code = fields.Integer(
-        string='Code'
+        string = "Code"
     )
     company = fields.Many2one(
-        'res.company',
-        string='Company Inside'
+        "res.company",
+        string = "Company Inside"
     )
 
     _sql_constraints = [
@@ -47,13 +48,3 @@ class ueb(models.Model):
         return notification
         #raise Warning('Funcionan los records server'+self.name+'')
 
-class stage(models.Model):
-    _inherit= 'hr.recruitment.stage'
-
-    code = fields.Integer(
-        string='Code'
-    )
-
-    _sql_constraints = [
-        ('code_unique', 'UNIQUE (code)', 'Tag code already exists'),
-    ]

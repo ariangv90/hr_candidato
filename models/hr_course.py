@@ -3,14 +3,14 @@ from odoo import models, fields, api
 
 
 class aspectos(models.Model):
-    _name = 'slide.aspect'
-    _description = 'Aspect to evaluate course of habilitation'
+    _name = "slide.aspect"
+    _description = "Aspect to evaluate course of habilitation"
 
     name = fields.Char(
-        string='Name'
+        string = "Name"
     )
     code = fields.Integer(
-        string='Code'
+        string = "Code"
     )
 
     _sql_constraints = [
@@ -19,15 +19,15 @@ class aspectos(models.Model):
     ]
 
 class course(models.Model):
-    _inherit = 'slide.channel'
+    _inherit = "slide.channel"
 
 
     code = fields.Integer(
-        string='Code'
+        string = "Code"
     )
     aspectos = fields.Many2one(
-        'slide.aspect',
-        string='Aspect to evaluate course of habilitation'
+        "slide.aspect",
+        string = "Aspect to evaluate course of habilitation"
     )
 
     _sql_constraints = [
