@@ -24,7 +24,7 @@
     <menuitem name="Model Summary of Labor verifications" id="hr_candidato.menu_4_list" parent="hr_candidato.menu_1"
               action="resumen_action_window" groups="group_hr_modelo_user"/>
     <menuitem name="Model Summary of psychological evaluation" id="hr_candidato.menu_5_list" parent="hr_candidato.menu_1"
-              action="psico_action_window" groups="group_hr_modelo_user"/>
+              action="hr_candidato.psico_action_window" groups="group_hr_modelo_user"/>
     <menuitem name="Model the student is record of integral evaluation" id="hr_candidato.menu_6_list" parent="hr_candidato.menu_1"
               action="evalua_action_window" groups="group_hr_modelo_user"/>
     <!--Nomencladores-->
