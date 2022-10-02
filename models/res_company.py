@@ -4,11 +4,11 @@ from odoo import models, fields, api
 
 
 class rescompany(models.Model):
-     _inherit='res.company'
+     _inherit = "res.company"
 
 
      code = fields.Integer(
-          string='Code'
+          string = "Code"
      )
 
      _sql_constraints = [
